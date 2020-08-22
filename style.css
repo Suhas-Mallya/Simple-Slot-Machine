@@ -1,0 +1,80 @@
+:root {
+    --speed: 1;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.heading {
+    width: 700px; 
+    height: 70px;
+    margin: auto;
+    margin: auto;
+    background-color: rgb(142, 251, 255);
+    line-height: 15px;
+    text-align: center;
+    font-size: larger;
+    font-family: cursive;
+    border-radius: 150px;
+    border: solid 5px red;
+}
+
+.machine {
+    width: 1000px;
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: coral;
+    border: 5px dotted lemonchiffon;
+    border-radius: 15px;
+    display: flex;
+}
+
+.slot {
+    width: 250px;
+    height: 220px;
+    margin: auto;
+    background-color: rgb(247, 216, 179);
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 90pt;
+    line-height: 250px;
+    overflow: hidden;
+}
+
+.value {
+    animation: moveemoji ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: calc(1s / var(--speed));;
+}
+
+.btn {
+    width: 400px;
+    height: 80px;
+    border: 2px solid black;
+    background-color: rgb(59, 117, 194);
+    color: aliceblue;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 20px;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 80px;
+}
+
+.inp {
+    width: 100px;
+    height: 40px;
+    font-size: larger;
+}
+
+@keyframes moveemoji {
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(200px);
+    }
+} 
